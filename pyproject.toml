@@ -12,12 +12,21 @@ dependencies = [
     "seaborn (>=0.13.2,<0.14.0)",
     "numpy (>=2.2.4,<3.0.0)",
     "matplotlib (>=3.10.1,<4.0.0)",
-    "ipykernel (>=6.29.5,<7.0.0)"
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "openpyxl (>=3.1.5,<4.0.0)"
 ]
 
 [tool.poetry]
+name = "airbnb-analysis"
+version = "0.1.0"
+description = ""
+authors = ["joaohsilva <joaohasilva416@gmail.com>"]
 packages = [{include = "airbnb_analysis", from = "src"}]
 
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
